@@ -105,5 +105,5 @@ class Create_Post_Window extends React.Component{
 
 // ============ LLAMADA AL INDEX.HTML
 
-ReactDOM.render(<Create_Post_Window />, document.getElementById("root"));
+//ReactDOM.render(<Create_Post_Window />, document.getElementById("root"));
 
