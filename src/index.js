@@ -193,7 +193,7 @@ class Foros_Dispobles extends React.Component{
             <h3>Foros de la comunidad</h3>
                 <ul> 
                     <li>Foro 1</li>
-          n          <li>Foro 2</li>
+          n         <li>Foro 2</li>
                     <li>Foro 3</li>
                     <li>Foro 4</li>
                 </ul>
