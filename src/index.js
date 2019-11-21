@@ -98,6 +98,8 @@ class PostCreation extends React.Component {
     }   
 }
 
+
+
 //Vetana de creacion
 
 class Create_Post_Window extends React.Component{
@@ -149,7 +151,7 @@ AgregarNombre(event){
 }
 }
 
-//Componente de cracion de foro
+//Componente de creacion de foro
 
 class CreateForumWindow extends React.Component{
     render(){
@@ -162,6 +164,60 @@ class CreateForumWindow extends React.Component{
         )
     }
 }
+
+//Ventana para mostrar un foro seleccionado 
+class Foro_Seleccionado extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            id_usuario: '',
+            nombre: 'Foro de prueba',
+            numero_miembros: 0,
+            fecha_creacion: '',
+            id_miembros: [],
+            publicaciones: []
+        }
+    }
+
+    render(){
+        return(
+        <seccion>
+            <h1>{this.state.nombre}</h1>
+                <span>Seguir Foro</span>
+                <h2>Publicaciones</h2>
+                <ul>
+                    <li>Post 1</li>
+                    <li>Post 2</li>
+                    <li>Post 3</li>
+                    <li>Post 4</li>
+                    <li>Post 5</li>
+                </ul>
+                <h3>Seguidores</h3>
+                <ul>
+                    <li>Seguidor 1</li>
+                    <li>Seguidor 2</li>
+                    <li>Seguidor 3</li>
+                    <li>Seguidor 4</li>
+                </ul>
+                
+                <button className="publicar"> Publicacion Nueva </button>
+        </seccion>)
+    }
+}
+
+//Ventana de Foro 
+class Foro_Page extends React.Component{
+    render(){
+        return(
+        <div>
+            <Nav />
+            <Foro_Seleccionado />
+            <Footer />
+        </div>)
+    }
+}
+
+//Pagina principal a la redirige el login
 
 class Info_Personal extends React.Component{
     constructor(props){
@@ -179,8 +235,9 @@ class Info_Personal extends React.Component{
             <aside>
               <h2>{this.state.nombre_usuario}</h2>
               <span>Seguidores: {this.state.seguidores}</span>
+              <br></br>
+              <span>Tus mazos</span>
             </aside>
-          
         </section>
         )
     }
@@ -190,14 +247,28 @@ class Foros_Dispobles extends React.Component{
     render(){
         return(
             <section>
-            <h3>Foros de la comunidad</h3>
+            <h3>Foros de la comunidad</h3> 
+                 <input type="text" placeholder="Filtrar..." name="buscar" />
+                 <button className="submit"> Buscar </button>
                 <ul> 
                     <li>Foro 1</li>
-          n         <li>Foro 2</li>
+                    <li>Foro 2</li>
                     <li>Foro 3</li>
                     <li>Foro 4</li>
                 </ul>
             </section>
+        )
+    }
+}
+
+class Botones_De_Creacion extends React.Component{
+    render(){
+        return(
+            <div>
+                <button className="submit"> Crear Foro </button>
+                <br></br> <br></br>
+                 <button className="submit"> Crear Mazo</button>
+            </div>
         )
     }
 }
@@ -208,13 +279,15 @@ class HomePage extends React.Component{
           <div>
                 <Nav />
                 <Info_Personal />
+                <Foros_Dispobles />
+                <Botones_De_Creacion />
                 <Footer />
           </div>
         )
     }
 }
 
-ReactDOM.render(<HomePage />, document.getElementById("root"));
+ReactDOM.render(<Foro_Page />, document.getElementById("root"));
 
 // ============ LLAMADA AL INDEX.HTML
 
