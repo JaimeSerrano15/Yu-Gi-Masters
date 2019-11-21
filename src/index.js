@@ -64,7 +64,7 @@ class Footer extends React.Component {
             ></img>
             </li>
             <li className="info">
-              <span>información</span>
+              <span><a href='/info/'>Acerca de</a></span>
             </li>
             <li>
             <img
@@ -77,6 +77,31 @@ class Footer extends React.Component {
         </footer>
       );
     }
+  }
+
+  //Enlace de informacion en el footer de la pagina
+  class Informacion extends React.Component{
+      render(){
+          return(
+            <div>
+                <p>
+                    Yu-Gi-Masters nació por la nececidad de la creciente comunidad, de El Salvador, de jugadores del popular juego de cartas, Yu-Gi-Oh!,
+                    de compartir entre si, de manera más amigable, sus inquietudes sobre el juego, torneos locales, estrategias, encontrar jugadores 
+                    cercanos con quienes interactuar, competir, y aprender. 
+
+                    Ya que la comunidad esta llena de gente muy experimentada, de nivel medio, y novatos, Yu-Gi-Web es el lugar perfecto
+                    para que todo tipo de jugador pueda aprender de los más veteranos, foguearse con gente de nivel medio, y conocer jugadores 
+                    recientes.<br/><br/>
+
+                    Nuevo fundador, Mario Rene Villalobos Mejía, tiene la visión de hacer crecer, y conectar aun mas la comunidad de Yu-Gi-Oh!, 
+                    darle las erramientas para que comparta conocimiento, y convertirla en una comnuidad culta, y entendida profundamente en todo 
+                    lo que implica ser un buen jugador de Yu-Gi. El equipo comprometido con al creacion de esta web, comparte la misma vision de Mario,
+                    y tiene la mision de llevar a la comunidad de jugadores de Yu-Gi-Oh de El Salvador, en la mejor comunidad a nivel de juego, y conocimiento
+                    del juego en toda la región centroamericana. 
+                </p>
+            </div>
+          );
+      }
   }
 
 //Ventana para la creacion de publicacion dentro de un foro
@@ -336,6 +361,7 @@ class HomePage extends React.Component {
 
 
 
+
 class Welcome extends React.Component {
     render() {
         return (
@@ -346,6 +372,7 @@ class Welcome extends React.Component {
                         <Route path='/' exact component={Register} />
                         <Route path='/login' component={Login} />
                         <Route path='/homepage' component={HomePage} />
+                        <Route path='/info' component={Informacion} />
                         <p>hola</p>
                     </Switch>
                     <Footer />
