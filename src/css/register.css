@@ -1,0 +1,100 @@
+.imgRegister {
+    visibility: hidden;
+    height: 0px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+
+}
+
+
+p {
+    margin: 10px 20px;
+    text-align: center;
+
+}
+
+.regist{
+    margin-top: 30px;
+    width: 85px;
+    align-self: center;
+}
+
+.rf label {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.rf input {
+    margin-bottom: 6px;
+    height: 15px;
+    width: 210px;
+    align-self: center;
+    border-radius: 3px;
+}
+
+.rf {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.logo {
+    height: 70px;
+}
+
+/* Pesonalizando estilo para tablets*/
+@media only screen and (min-width: 768px) {
+
+    .imgRegister {
+        visibility: visible;
+        height: 300px;
+        width: 220px;
+        padding-left: 120px;
+    }
+
+    .logo {
+        margin: 0px 345px;
+    }
+
+    .header {
+        height: 75px;
+        width: 968px;
+    }
+
+    .present {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {
+        margin-top: 50px;
+        padding-right: 40px;
+    }
+
+    .register-form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    p {
+        margin-top: 15px;
+        margin-right: 80px;
+    }
+
+
+}
+
+/* Pesonalizando estilo para escritorio*/
+@media only screen and (min-width: 1440px) {
+
+
+}
+

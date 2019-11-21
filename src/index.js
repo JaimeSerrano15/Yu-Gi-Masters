@@ -1,8 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
+import './css/index.css'
+import './css/register.css'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
+
+class Navo extends React.Component {
+    render(){
+        return(
+            <header>
+            <div className="logoType">
+            <img
+              src="https://carlisletheacarlisletheatre.org/images/yugioh-logo-transparent-5.png"
+              alt="Logo"
+              className="logo"
+            ></img>
+          </div>
+            </header>
+        )
+    }
+}
 //Barra de navegacion principal de la pagina
 class Nav extends React.Component {
     render() {
@@ -323,14 +341,28 @@ class Welcome extends React.Component {
         return (
             <Router>
                 <div>
+                <Navo />
                     <Switch>
                         <Route path='/' exact component={Register} />
                         <Route path='/login' component={Login} />
                         <Route path='/homepage' component={HomePage} />
                         <p>hola</p>
                     </Switch>
+                    <Footer />
                 </div>
             </Router>
+        )
+    }
+}
+
+class Try extends React.Component{
+    render(){
+        return(
+            <div>
+      <Nav />
+      <Register/>
+      <Footer />
+      </div>
         )
     }
 }
@@ -459,7 +491,7 @@ class Login extends React.Component {
             </div>
         )
     }
-}
+}   
 
 
 
