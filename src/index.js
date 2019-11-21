@@ -163,7 +163,7 @@ class CreateForumWindow extends React.Component{
     }
 }
 
-class HomePage_Body extends React.Component{
+class Info_Personal extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -172,7 +172,7 @@ class HomePage_Body extends React.Component{
             correo: '00156618@uca.edu.sv'
         };
     }
-    
+
     render(){
         return(
         <section>
@@ -180,16 +180,24 @@ class HomePage_Body extends React.Component{
               <h2>{this.state.nombre_usuario}</h2>
               <span>Seguidores: {this.state.seguidores}</span>
             </aside>
+          
+        </section>
+        )
+    }
+}
+
+class Foros_Dispobles extends React.Component{
+    render(){
+        return(
             <section>
-                <h3>Foros de la comunidad</h3>
+            <h3>Foros de la comunidad</h3>
                 <ul> 
                     <li>Foro 1</li>
-                    <li>Foro 2</li>
+          n          <li>Foro 2</li>
                     <li>Foro 3</li>
                     <li>Foro 4</li>
                 </ul>
             </section>
-        </section>
         )
     }
 }
@@ -199,7 +207,7 @@ class HomePage extends React.Component{
         return(
           <div>
                 <Nav />
-                <HomePage_Body />
+                <Info_Personal />
                 <Footer />
           </div>
         )
