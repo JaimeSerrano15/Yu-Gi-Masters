@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 //Barra de navegacion principal de la pagina
 class Nav extends React.Component {
     render() {
+<<<<<<< HEAD
         return (
             <div>
                 <nav>
@@ -34,11 +35,68 @@ class Footer extends React.Component {
         )
     }
 }
+=======
+      return (
+        <header>
+          <div className="logoType">
+            <img
+              src="https://carlisletheacarlisletheatre.org/images/yugioh-logo-transparent-5.png"
+              alt="Logo"
+              className="logo"
+            ></img>
+          </div>
+          <nav className="menuNav">
+            <ul>
+              <li>
+                <span>Home</span>
+              </li>
+              <li>
+                <span>Perfil</span>
+              </li>
+              <li>
+                <span>Amigos</span>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      );
+    }
+  }
+//Footer de la pagina, informacion de redes sociales, y de contacto
+class Footer extends React.Component {
+    render() {
+      return (
+        <footer className="footer">
+          <ul>
+            <li>
+            <img
+              src="https://seeklogo.com/images/I/instagram-new-2016-logo-4773FE3F99-seeklogo.com.png"
+              alt="face"
+              className="facebook"
+            ></img>
+            </li>
+            <li className="info">
+              <span>información</span>
+            </li>
+            <li>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+              alt="insta"
+              className="instagram"
+            ></img>
+            </li>
+          </ul>
+        </footer>
+      );
+    }
+  }
+>>>>>>> Cader
 
 //Ventana para la creacion de publicacion dentro de un foro
 
 //Formulario para la creacion de la publicacion
 class PostCreation extends React.Component {
+<<<<<<< HEAD
     state = {
         comentarios: "",
         autor: "",
@@ -99,6 +157,71 @@ class PostCreation extends React.Component {
     }
 }
 
+=======
+    constructor(props) {
+      super(props);
+      this.state = {
+        autor: " ",
+        title: " ",
+        text: " "
+      };
+    }
+  
+    render() {
+      return (
+        <div className="body">
+          <section className="bodySection">
+            <br></br>
+            <div className="span">
+            <span className="frase">
+              Crea un post para interactuar con la comunidad
+            </span>
+            </div>
+            <div className="article">
+            <form>
+              <h3>Titulo</h3>
+              <div className="title">
+              <input
+              className="boxTitle"
+                type="text"
+                placeholder="Un título creativo..."
+                value={this.state.title}
+                onChange={this.setTitle.bind(this)}
+              ></input>
+              </div>
+              <br></br> <br></br>
+              <h3 className="postCont">Contenido</h3>
+              <div className="content">
+              <textarea
+                className="BigText"
+                type="text2"
+                placeholder="Discusion"
+                value={this.state.text}
+                onChange={this.setText.bind(this)}
+              /></div>
+              <div className="submitBtn">
+              <button> Publicar </button>
+              </div>
+            </form>
+            </div>
+          </section>
+        </div>
+      );
+    }
+  
+    setTitle(event) {
+      this.setState({
+        title: event.target.value
+      });
+    }
+  
+    setText(event) {
+      this.setState({
+        text: event.target.value
+      });
+    }
+  }
+>>>>>>> Cader
 
 
 //Vetana de creacion
@@ -299,7 +422,10 @@ class Welcome extends React.Component {
                         <Route path='/' exact component={Register} />
                         <Route path='/login' component={Login} />
                         <Route path='/homepage' component={HomePage} />
+<<<<<<< HEAD
                         <Route path='/forumscr' component={} />
+=======
+>>>>>>> Cader
                         <p>hola</p>
                     </Switch>
                 </div>
