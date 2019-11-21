@@ -6,36 +6,6 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 //Barra de navegacion principal de la pagina
 class Nav extends React.Component {
     render() {
-<<<<<<< HEAD
-        return (
-            <div>
-                <nav>
-                    <ul>
-                        <li><i>Logo</i></li>
-                        <li><i>Home</i></li>
-                        <li><span>Crear</span></li>
-                        <li><span>Amigos</span></li>
-                    </ul>
-                </nav>
-            </div>
-        )
-    }
-}
-
-//Footer de la pagina, informacion de redes sociales, y de contacto
-
-class Footer extends React.Component {
-    render() {
-        return (
-            <footer>
-                <span>Info</span>
-                <span>Facebook</span>
-                <span>Insta</span>
-            </footer>
-        )
-    }
-}
-=======
       return (
         <header>
           <div className="logoType">
@@ -90,74 +60,11 @@ class Footer extends React.Component {
       );
     }
   }
->>>>>>> Cader
 
 //Ventana para la creacion de publicacion dentro de un foro
 
 //Formulario para la creacion de la publicacion
 class PostCreation extends React.Component {
-<<<<<<< HEAD
-    state = {
-        comentarios: "",
-        autor: "",
-        titulo: "",
-        contenido: "",
-        id_usuario: ""
-    };
-
-    handlePost = event => {
-        event.preventDefault();
-
-        const post = {
-            comentarios: " ",
-            titulo: this.state.titulo,
-            contenido: this.state.contenido,
-            id_usuario: " "
-        };
-
-        axios.post('http://localhost:3001/posts', post)
-            .then((res) => {
-                console.log(res);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
-    }
-
-    //Renderizacion del formulario de creacion de publicaciones
-    render() {
-        return (
-            <div>
-                <section>
-                    <span>Crea un post para interactuar con la comunidad</span>
-                    <article>
-                        <h3>Titulo de Post</h3>
-                        <form onSubmit={this.handlePost}>
-                            <input type="text" placeholder="Un título creativo..." name="titulo" onChange={this.AgregarTitulo.bind(this)} />
-                            <br></br> <br></br>
-                            <textarea type="text" placeholder="Discusion" name="contenido" onChange={this.AgregarContenido.bind(this)} />
-                            <button className="submit"> Publicar </button>
-                        </form>
-                    </article>
-                </section>
-            </div>
-        )
-    }
-
-    AgregarTitulo(event) {
-        this.setState({
-            titulo: event.target.value
-        })
-    }
-
-    AgregarContenido(event) {
-        this.setState({
-            contenido: event.target.value
-        })
-    }
-}
-
-=======
     constructor(props) {
       super(props);
       this.state = {
@@ -221,8 +128,6 @@ class PostCreation extends React.Component {
       });
     }
   }
->>>>>>> Cader
-
 
 //Vetana de creacion
 
@@ -422,10 +327,6 @@ class Welcome extends React.Component {
                         <Route path='/' exact component={Register} />
                         <Route path='/login' component={Login} />
                         <Route path='/homepage' component={HomePage} />
-<<<<<<< HEAD
-                        <Route path='/forumscr' component={} />
-=======
->>>>>>> Cader
                         <p>hola</p>
                     </Switch>
                 </div>
