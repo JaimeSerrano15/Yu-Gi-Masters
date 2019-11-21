@@ -214,7 +214,6 @@ class HomePage extends React.Component{
     }
 }
 
-
 ReactDOM.render(<HomePage />, document.getElementById("root"));
 
 // ============ LLAMADA AL INDEX.HTML
