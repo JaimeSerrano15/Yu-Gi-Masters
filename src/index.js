@@ -371,6 +371,49 @@ class Crear_Mazo extends React.Component{
     }
 }
 
+//Visualizacion de mazos del usuario 
+
+    //Mostrando los mazos
+
+    class Motrar_Mazos extends React.Component{
+            render(){
+                return(
+                    <div>
+                       <h2>Tus Mazos: </h2>
+                            <div>
+
+                            </div> 
+                    </div>
+                )
+            }
+    }
+
+    class Mostrar_Carta_Mazo extends React.Component {
+        render(){
+            return(
+                <div>
+                    <h2>Cartas:</h2>
+                        <div>
+
+                        </div>
+                </div>
+            )
+        }
+    }
+
+class Tus_Mazos extends React.Component {
+    render(){
+        return(
+            <div>
+                <Nav />
+                <Motrar_Mazos />
+                <Mostrar_Carta_Mazo />
+                <Footer />
+            </div>
+        )
+    }
+}
+
 //Pagina principal a la redirige el login
 
 class Info_Personal extends React.Component {
@@ -441,7 +484,7 @@ class HomePage extends React.Component {
     }
 }
 
-ReactDOM.render(<Crear_Mazo />, document.getElementById("root"));
+ReactDOM.render(<Tus_Mazos />, document.getElementById("root"));
 
 // ============ LLAMADA AL INDEX.HTML
 
