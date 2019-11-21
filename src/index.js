@@ -299,6 +299,7 @@ class Welcome extends React.Component {
                         <Route path='/' exact component={Register} />
                         <Route path='/login' component={Login} />
                         <Route path='/homepage' component={HomePage} />
+                        <Route path='/forumscr' component={} />
                         <p>hola</p>
                     </Switch>
                 </div>
