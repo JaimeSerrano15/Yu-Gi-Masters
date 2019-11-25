@@ -367,9 +367,9 @@ class Welcome extends React.Component {
         return (
             <Router>
                 <div>
-                <Navo />
+                <Nav />
                     <Switch>
-                        <Route path='/' exact component={Register} />
+                        <Route path='/' exact component={PostCreation} />
                         <Route path='/login' component={Login} />
                         <Route path='/homepage' component={HomePage} />
                         <Route path='/info' component={Informacion} />

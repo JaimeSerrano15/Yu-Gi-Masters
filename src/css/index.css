@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 *,
 ::before,
 ::after {
@@ -21,25 +21,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  margin-bottom: 50px;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.menuNav ul li:hover{
-  color: #FFD700
+.menuNav ul li:hover {
+  color: #ffd700;
 }
 
 .header ul {
   list-style: none;
 }
-.menuNav ul li {
-  text-decoration: none;
-  list-style: none;
-  font-size: 12px;
-}
-
 header {
   display: flex;
   color: antiquewhite;
@@ -47,7 +43,6 @@ header {
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .header ul {
@@ -68,34 +63,36 @@ header {
 }
 
 h3 {
-text-align: center;
-color: 	#F0FFFF;
-font-family: "Alata", sans-serif;
-text-align: center;
+  margin: 0.5em;
+  text-align: center;
+  color: #f0ffff;
+  font-family: "Alata", sans-serif;
+  text-align: center;
 }
 
 .BigText {
-  height: 70px;
+  height: 20vh;
 }
 
-.submitBtn button{
+.submitBtn button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: auto;
-  border-radius: 30px;
+  border-radius: 5px;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 3vh;
 }
 
-.title input{
-  height: 2em;
+.title input {
+  height: 2.5em;
   width: 100%;
 }
 
-
 .menuNav ul li {
   padding: 0.5vh 1vh;
+  list-style: none;
   text-decoration: none;
   font-size: 12px;
 }
@@ -110,64 +107,65 @@ text-align: center;
 
 .span {
   box-sizing: border-box;
-  padding: 0px 20px;
+  padding: 1em;
+  font-size: 3vh;
   text-align: center;
 }
-.article div{
+.article div {
   margin: 0;
   padding: 0;
-  
 }
 
 .article {
   display: flex;
   justify-content: center;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
-.BigText{
+.BigText {
   width: 100%;
 }
 
 .frase {
   font-family: "Alata", sans-serif;
   box-sizing: border-box;
-  color: 	#F0FFFF;
+  color: #f0ffff;
 }
 
 .BigText {
- border-radius: 5px;
- border: solid black;
- border-width: 1.5px;
+  border-radius: 5px;
+  border: solid black;
+  border-width: 1.5px;
 }
 
 .boxTitle {
   border-radius: 5px;
   border: solid black;
   border-width: 1.5px;
-
 }
 
 .footer {
-  background: #3a227f;
+  background: #000000;
   color: antiquewhite;
   bottom: 0;
   box-sizing: border-box;
   position: absolute;
-  height: 75px;
+  height: 50px;
   width: 100%;
 }
 
 .footer ul {
   display: flex;
   flex-direction: row;
-  justify-content: start;;
+  justify-content: center;
 }
 
 .footer ul li {
-  padding: 1em 2em;
+  display: flex;
+  justify-content: center;
+  margin: 1em 2em 0em 2em;
   list-style: none;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .facebook {
@@ -184,32 +182,15 @@ text-align: center;
   width: 30px;
 }
 
-.footer ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+form {
+  width: 60%;
+  height: 75%;
 }
 
 /* Pesonalizando estilo para escritorio*/
 @media only screen and (min-width: 1440px) {
-
-  form{
-    width: 50%;
-    height: 75%;
-  }
-  .title input {
-    height: 2.5em;
+  .BigText textarea {
+    height: 5em;
     width: 100%;
-  
-}
-
-.BigText textarea{
-  height: 5em;
-  width: 100%;
-}
-.submitBtn button{
-font-size: 20px;
-}
+  }
 }
