@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menuNav ul li {
+  padding: 0.5vh 1vh;
+  text-decoration: none;
+  font-size: 12px;
+  list-style: none;
+}
+
+.menuNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0.5em 1em 0.5em 1em;
+  padding: 0;
+}
+
+div p {
+ text-align: justify;
+ color: #eff7ff;
+ margin: 2em;
+
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 50px;
+}
+.footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+
+.footer ul li {
+  display: flex;
+  justify-content: center;
+  margin: 0.5;
+  list-style: none;
+  font-size: 12px;
+  padding: 1em 2em 0em 2em;
+
+}
+
+
+
+
