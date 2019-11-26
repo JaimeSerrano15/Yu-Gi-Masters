@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/*
+General and CreatePost
+*/
+
 *,
 ::before,
 ::after {
@@ -29,13 +33,10 @@ code {
     monospace;
 }
 
-.menuNav ul li:hover {
+nav ul li:hover {
   color: #ffd700;
 }
 
-.header ul {
-  list-style: none;
-}
 header {
   display: flex;
   color: antiquewhite;
@@ -46,6 +47,7 @@ header {
 }
 
 .header ul {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -57,9 +59,17 @@ header {
   flex-direction: row;
   justify-content: center;
 }
+.logo {
+  height: 70px;
+}
+
 .form {
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin: 1em;
+  width: 60%;
+  height: 75%;
 }
 
 h3 {
@@ -90,14 +100,14 @@ h3 {
   width: 100%;
 }
 
-.menuNav ul li {
-  padding: 0.5vh 1vh;
+nav ul li {
+  padding: 0.5vh 5vh;
   list-style: none;
   text-decoration: none;
   font-size: 12px;
 }
 
-.menuNav ul {
+nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -182,15 +192,38 @@ h3 {
   width: 30px;
 }
 
-form {
-  width: 60%;
+/*
+Login
+*/
+
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
   height: 75%;
 }
+.Login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-/* Pesonalizando estilo para escritorio*/
-@media only screen and (min-width: 1440px) {
-  .BigText textarea {
-    height: 5em;
-    width: 100%;
-  }
+.Login input {
+  width: 100%;
+}
+
+.LoginForm form label {
+  align-content: center;
+}
+.Btn button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 3vh;
 }
